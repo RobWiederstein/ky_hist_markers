@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+      <title>Leaflet Cluster Example</title>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <!--stylesheets load first-->
+      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.6.0/leaflet.css" />
+      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.4.1/MarkerCluster.css" />
+      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.4.1/MarkerCluster.Default.css" />
+      <!--scripts load next-->
+      <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.6.0/leaflet.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-ajax/2.1.0/leaflet.ajax.min.js"></script>
+      <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.4.1/leaflet.markercluster.js'></script>
+      <script type='text/javascript' src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-providers/1.9.1/leaflet-providers.min.js"></script>
+</head>
+
+<body>
+      <h1>Kentucky Historical Markers</h1>
+
+      <p>Here's an interactive map for each historical marker in Kentucky. The Kentucky Historical Society furnished the data from their <a href="https://history.ky.gov/resources/publications-databases/historical-marker-database/"
+                  target="_blank">website</a>.
+            <!--here's the map container-->
+            <div id="map" style="width: 800px; height: 400px; border: 1px solid #AAA;"></div>
+            <!--first file is for the markers-->
+            <script type='text/javascript' src='https://dl.dropbox.com/s/l7usscowmx6b67g/ky_hist_markers.js?raw=1'></script>
+            <!--add county boundaries to map-->
+            <script type='text/javascript' src='https://dl.dropbox.com/s/lgarxnyolseqe3x/ky_county_lines.js?raw=1'></script>
+            <!--second file is for the map-->
+            <script type='text/javascript' src="https://dl.dropbox.com/s/ffh53ittip78hiq/map_hist_marker_script.js?raw=1"></script>
+
+</body>
+
+</html>
