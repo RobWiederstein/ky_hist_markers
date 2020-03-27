@@ -1,3 +1,4 @@
+#Kentucky's Historical Markers
 <div>
 <br/>
 <p align="center">
@@ -18,14 +19,14 @@ Scraping the database yielded 2226 total markers.  The markers are numbered betw
 
 For most counties that worked pretty well.  For example, the center of Jefferson County is Louisville and locating the markers there worked well.  However, they were stacked on top of each other. Jefferson County has 228 markers.
 
-With 228 markers assigned the same coordinates, the "pop-up" contents were not easily viewed.  A minimal amout of random noise was introduced ("jitter") so the pop-up contents could be displayed.  This ended up with markers placed on the top of strip malls and car dealerships.  The map tiles were changed to Stamen so that building outlines were not included.
+With 228 markers assigned the same coordinates, the "pop-up" contents were not easily viewed.  A minimal amout of random noise was introduced ("jitter") so the pop-up contents could be displayed.  This ended up with markers placed on the top of strip malls and car dealerships.  The map tiles were changed to Stamen so that building outlines were excluded.
 
 ### Built With
 
 * [JQuery](https://jquery.com)
 * [Leaflet](https://leafletjs.com)
 * [R](https://cran.r-project.org)
-* [Convert.csv](https://www.convertcsv.com)
+* [https://www.convertcsv.com](https://www.convertcsv.com)
 * [Stamen](http://maps.stamen.com/#terrain/12/37.7706/-122.3782)
 * [rvest](http://rvest.tidyverse.org)
 * [Leaflet Marker Cluster](https://github.com/Leaflet/Leaflet.markercluster)
@@ -47,16 +48,16 @@ The header code must reference `jquery`, `leaflet` and `leaflet market-cluster`.
 ```
 ### Dependencies
 
-Kentucky counties were added as a layer to the map from the Kentucky Open GIS [portal](http://kygovmaps-kygeonet.opendata.arcgis.com/datasets/5a94b295e38244a889ec1d875d6afcc5_0). An API for the full geojson feature collection is listed as available [here](http://kygovmaps-kygeonet.opendata.arcgis.com/datasets/5a94b295e38244a889ec1d875d6afcc5_0.geojson).
+Kentucky counties were added as a layer to the map from the Kentucky Open GIS [portal](http://kygovmaps-kygeonet.opendata.arcgis.com/datasets/5a94b295e38244a889ec1d875d6afcc5_0). An API for the full geojson feature collection is available [here](http://kygovmaps-kygeonet.opendata.arcgis.com/datasets/5a94b295e38244a889ec1d875d6afcc5_0.geojson).
 
 ## Installation
 
 ```
 
-install.packages("devtools")
+#install.packages("devtools")
 devtools::install_github("RobWiederstein/my_functions")
 
-customize
+#customize
 git init
 git clone https://github.com/RobWiederstein/my_functions.git
 ```
